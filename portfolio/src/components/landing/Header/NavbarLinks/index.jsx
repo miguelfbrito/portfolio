@@ -1,16 +1,17 @@
 import React from "react"
+import { Link } from "./styles"
 
 export const NavbarLinks = () => {
   return (
     <ul>
       <li>
-        <a href="Home">Home</a>
+        <Link href="#about">About</Link>
       </li>
       <li>
-        <a href="Projects">Projects</a>
+        <Link href="#projects">Projects</Link>
       </li>
       <li>
-        <a href="Contact">Contact</a>
+        <Link href="#contact">Contact</Link>
       </li>
     </ul>
   )

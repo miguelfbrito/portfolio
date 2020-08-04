@@ -16,9 +16,11 @@
   "dependencies": {
     "gatsby": "^2.23.12",
     "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-styled-components": "^3.3.10",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0",
     "styled-components": "^5.1.1"
   },
   "devDependencies": {

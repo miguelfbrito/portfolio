@@ -1,14 +1,34 @@
 import styled from "styled-components"
 
-export const Education = styled.div``
+export const EducationWrapper = styled.div`
+  grid-area: education;
+`
+
+export const Education = styled.div`
+  display: flex;
+
+  p {
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+`
+
+export const Icon = styled.img`
+  min-width: 1.5rem;
+`
+
 export const University = styled.p``
+
+export const ContentWrapper = styled.div`
+  padding: 1rem 0.8rem;
+`
 
 export const Course = styled.p``
 
-export const StudiesDuration = styled.p`
-  margin-bottom: 15px;
-`
+export const StudiesDuration = styled.p``
+
 export const Skills = styled.div`
+  grid-area: skills;
   display: flex;
   flex-wrap: wrap;
 `

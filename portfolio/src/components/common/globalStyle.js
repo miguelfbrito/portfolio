@@ -8,14 +8,17 @@ const GlobalStyle = createGlobalStyle`
     }
 
     h1, h2, h3, h4, a, p {
-        font-family: Source sans pro;
+        font-family: Maven Pro;
+        font-style: normal;
+        color: ${color.white}
     }
     h1, h2{
         color: ${color.darkblue};
     }
 
-    h3, h4, a {
-        color:  ${color.graytext}
+    h3, h4, a, p {
+        color:  ${color.primary};
+        letter-spacing: 0.04em;
     }
 
     body {
@@ -24,10 +27,6 @@ const GlobalStyle = createGlobalStyle`
 
     h1, a {
         font-weight: 400;
-    }
-
-    p {
-        color: ${color.darkbluetext}
     }
 
 

@@ -4,7 +4,15 @@ import { color } from "../../../common/constants"
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  padding-top: 15px;
+  margin-top: -20px;
+
+  h1 {
+    color: white;
+    font-weight: 800;
+    letter-spacing: 0.055em;
+    color: #f2f2f2;
+    font-size: 28px;
+  }
 
   ul {
     display: flex;
