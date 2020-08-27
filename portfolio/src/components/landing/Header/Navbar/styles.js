@@ -4,14 +4,20 @@ import { color } from "../../../common/constants"
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-top: -20px;
+  padding-top: 15px;
+
+  animation: fadeIn 1s;
+
+  @media screen and (max-width: 700px) {
+    padding-top: 0;
+  }
 
   h1 {
     color: white;
     font-weight: 800;
     letter-spacing: 0.055em;
     color: #f2f2f2;
-    font-size: 28px;
+    font-size: 1.6rem;
   }
 
   ul {

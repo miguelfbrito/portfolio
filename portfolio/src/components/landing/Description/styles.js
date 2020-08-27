@@ -2,6 +2,10 @@ import styled from "styled-components"
 
 export const EducationWrapper = styled.div`
   grid-area: education;
+
+  h3 {
+    font-weight: 600;
+  }
 `
 
 export const Education = styled.div`
@@ -26,6 +30,16 @@ export const ContentWrapper = styled.div`
 export const Course = styled.p``
 
 export const StudiesDuration = styled.p``
+
+export const SkillWrapper = styled.div`
+  h3 {
+    font-weight: 600;
+  }
+
+  h4 {
+    font-weight: 500;
+  }
+`
 
 export const Skills = styled.div`
   grid-area: skills;

@@ -29,6 +29,30 @@ const GlobalStyle = createGlobalStyle`
         font-weight: 400;
     }
 
+    @media screen and (max-width: 700px){
+        html {
+            /* font-size: 18px; */
+        }
+        .headerImage {
+        }
+    }
+
+
+
+    @keyframes fadeIn {
+        from {
+        opacity: 0;
+        margin-left: -35px;
+        margin-right: 35px;
+        }
+        to {
+        opacity: 1;
+        margin-left: 0px;
+        margin-right: 0px;
+        }
+    }
+
+
 
 
 `

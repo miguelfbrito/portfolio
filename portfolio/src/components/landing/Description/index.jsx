@@ -9,6 +9,7 @@ import {
   Skills,
   Skill,
   SkillCategory,
+  SkillWrapper,
   Icon,
   ContentWrapper,
 } from "./styles"
@@ -81,7 +82,7 @@ export const Description = () => {
         </Education>
       </EducationWrapper>
 
-      <div>
+      <SkillWrapper>
         <h3>Skills</h3>
         <SkillCategory>
           <h4>Backend</h4>
@@ -124,7 +125,7 @@ export const Description = () => {
             ))}
           </Skills>
         </SkillCategory>
-      </div>
+      </SkillWrapper>
     </Fragment>
   )
 }

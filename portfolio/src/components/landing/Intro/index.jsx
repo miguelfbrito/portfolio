@@ -4,7 +4,7 @@ import { Wrapper } from "./styles"
 export const Intro = () => {
   return (
     <Wrapper>
-      <h2>About Me</h2>
+      <h2>Hello there!</h2>
       <h3>I'm Miguel Brito, a Software Engineer from Portugal</h3>
       <h4>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sint

@@ -1,7 +1,7 @@
 import styled from "styled-components"
+import image from "../../../assets/images/projects_background.svg"
 import { color } from "../../../components/common/constants"
 export const Wrapper = styled.div`
-  height: 100vh;
   margin-top: 10vh;
 
   img {
@@ -9,7 +9,8 @@ export const Wrapper = styled.div`
     left: 0;
     width: 100vw;
     max-width: 100%;
-    z-index: -99;
+    z-index: -1;
+    height: 100vh;
   }
 
   h2 {
@@ -22,38 +23,81 @@ export const Wrapper = styled.div`
 
 export const ProjectWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
-  grid-gap: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  grid-gap: 7rem;
   margin-top: 5vh;
 `
 
 export const Project = styled.div`
   position: relative;
-  max-height: 70vh;
-  min-height: 40vh;
-
-  box-shadow: 5px 5px 25px 0 rgba(0, 0, 0, 0.25);
-  transition: transform 250ms ease;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+  border-radius: 4%;
+  transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
+  overflow: hidden;
 
   /* background-color: ${color.white}; */
 
-  &:hover {
-    transform: scale(1.15);
+  background-color: #e6e8ff;
+  /* background-color: 
+  /* background-color: #383c66; */
+  /* background: rgb(242, 242, 242);
+  background: linear-gradient(
+    280deg,
+    rgba(242, 242, 242, 1) 0%,
+    rgba(171, 178, 219, 1) 100%
+  ); */
+   &:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
     border: none;
-    background-color: ${color.primary};
   }
+
+  img {
+    position: relative;
+    width: 90%;
+    height: auto;
+    top: 0;
+    margin: 5%;
+    z-index: 1;
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.3));
+  }
+
+  /* clip-path: inset(0% 10% 0% 0%); */
+`
+
+export const ImageWrapper = styled.div`
+  height: 100%;
+  max-height: 25%;
 `
 
 export const Content = styled.div`
-  position: absolute;
-  bottom: 0;
+  position: relative;
   max-height: 50%;
-  padding: 15px;
-  background-color: ${color.primary};
+  padding: 35px;
+  /* background-color: ${color.primary}; */
   h3,
   p {
-    color: ${color.white};
-    font-size: 0.8rem;
+    color: ${color.primary};
     line-height: 1.1rem;
+  }
+
+  h3{
+    font-size: 1.1rem;
+    margin: 15px auto;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+  }
+`
+
+export const Description = styled.div`
+  background-color: red;
+  clip-path: inset(80% 0% 0% 0%);
+
+  transition: clip-path 250ms ease-in-out;
+  &:hover {
+    clip-path: inset(0% 0% 0% 0%);
   }
 `

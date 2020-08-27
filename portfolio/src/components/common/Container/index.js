@@ -8,8 +8,12 @@ export const Container = styled.div`
     width: 90%;
   }
 
-  @media (min-width: 993px) {
-    width: 80%;
+  @media only screen and (max-width: 1000px) {
+    max-width: 90%;
+  }
+
+  @media only screen and (max-width: 700px) {
+    max-width: 90%;
   }
 
   img {
