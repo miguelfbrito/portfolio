@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
         padding: 0px;
     }
 
-    h1, h2, h3, h4, a, p {
+    h1, h2, h3, h4, a, p, li {
         font-family: Maven Pro;
         font-style: normal;
         color: ${color.white}
@@ -37,18 +37,25 @@ const GlobalStyle = createGlobalStyle`
         }
     }
 
-
-
     @keyframes fadeIn {
         from {
         opacity: 0;
-        margin-left: -35px;
-        margin-right: 35px;
+        margin-left: -25px;
+        margin-right: 25px;
         }
         to {
         opacity: 1;
         margin-left: 0px;
         margin-right: 0px;
+        }
+    }
+
+    @keyframes fadeInPlace {
+        from {
+        opacity: 0;
+        }
+        to {
+        opacity: 1;
         }
     }
 

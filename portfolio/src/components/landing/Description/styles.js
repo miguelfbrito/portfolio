@@ -1,11 +1,18 @@
 import styled from "styled-components"
 
-export const EducationWrapper = styled.div`
+export const EducationContainer = styled.div`
   grid-area: education;
 
   h3 {
     font-weight: 600;
   }
+`
+
+export const EducationWrapper = styled.div`
+  animation: fadeIn 1s;
+  opacity: 0;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
 `
 
 export const Education = styled.div`
@@ -32,6 +39,11 @@ export const Course = styled.p``
 export const StudiesDuration = styled.p``
 
 export const SkillWrapper = styled.div`
+  animation: fadeIn 1s;
+  opacity: 0;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+
   h3 {
     font-weight: 600;
   }

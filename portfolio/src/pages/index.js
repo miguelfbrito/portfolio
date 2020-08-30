@@ -26,9 +26,9 @@ export default () => (
       src={headerImage}
       style={{
         position: "absolute",
+        display: "block",
         zIndex: "-1",
-        maxHeight: "11rem",
-        width: "100vw",
+        width: "100%",
         maxWidth: "100%",
         left: 0,
       }}

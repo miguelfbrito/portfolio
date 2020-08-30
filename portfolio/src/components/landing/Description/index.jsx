@@ -2,7 +2,6 @@ import React from "react"
 import { Fragment } from "react"
 import {
   Education,
-  EducationWrapper,
   University,
   Course,
   StudiesDuration,
@@ -12,6 +11,8 @@ import {
   SkillWrapper,
   Icon,
   ContentWrapper,
+  EducationContainer,
+  EducationWrapper,
 } from "./styles"
 
 import SchoolIcon from "../../../assets/images/icon_school.svg"
@@ -34,53 +35,57 @@ const skills = {
 export const Description = () => {
   return (
     <Fragment>
-      <EducationWrapper>
-        <h3>Education</h3>
-        <Education>
-          <Icon src={SchoolIcon}></Icon>
-          <ContentWrapper>
-            <Course>MSc in Computer Engineering</Course>
-            <University>University of Minho</University>
-            <StudiesDuration>2015-2018</StudiesDuration>
-          </ContentWrapper>
-        </Education>
+      <EducationContainer>
+        <EducationWrapper>
+          <h3>Education</h3>
+          <Education>
+            <Icon src={SchoolIcon}></Icon>
+            <ContentWrapper>
+              <Course>MSc in Computer Engineering</Course>
+              <University>University of Minho</University>
+              <StudiesDuration>2015-2018</StudiesDuration>
+            </ContentWrapper>
+          </Education>
 
-        <Education>
-          <Icon src={SchoolIcon}></Icon>
-          <ContentWrapper>
-            <Course>BSc in Computer Engineering</Course>
-            <University>Polytechnic of Guarda</University>
-            <StudiesDuration>2015-2018</StudiesDuration>
-          </ContentWrapper>
-        </Education>
+          <Education>
+            <Icon src={SchoolIcon}></Icon>
+            <ContentWrapper>
+              <Course>BSc in Computer Engineering</Course>
+              <University>Polytechnic of Guarda</University>
+              <StudiesDuration>2015-2018</StudiesDuration>
+            </ContentWrapper>
+          </Education>
+        </EducationWrapper>
 
-        <h3>Publications</h3>
-        <Education>
-          <Icon src={BookIcon}></Icon>
-          <ContentWrapper>
-            <Course>MSc in Computer Engineering</Course>
-            <University>University of Minho</University>
-            <StudiesDuration>2015-2018</StudiesDuration>
-          </ContentWrapper>
-        </Education>
-        <Education>
-          <Icon src={BookIcon}></Icon>
-          <ContentWrapper>
-            <Course>
-              Codeflex: A Web-based Platform for Competitive Programming
-            </Course>
-            <University>CISTI'2019</University>
-          </ContentWrapper>
-        </Education>
+        <EducationWrapper>
+          <h3>Publications</h3>
+          <Education>
+            <Icon src={BookIcon}></Icon>
+            <ContentWrapper>
+              <Course>MSc in Computer Engineering</Course>
+              <University>University of Minho</University>
+              <StudiesDuration>2015-2018</StudiesDuration>
+            </ContentWrapper>
+          </Education>
+          <Education>
+            <Icon src={BookIcon}></Icon>
+            <ContentWrapper>
+              <Course>
+                Codeflex: A Web-based Platform for Competitive Programming
+              </Course>
+              <University>CISTI'2019</University>
+            </ContentWrapper>
+          </Education>
 
-        <Education>
-          <Icon src={BookIcon}></Icon>
-          <ContentWrapper>
-            <Course>2nd at National Firefighter Robot</Course>
-            <University>Guarda</University>
-          </ContentWrapper>
-        </Education>
-      </EducationWrapper>
+          <Education>
+            <Icon src={BookIcon}></Icon>
+            <ContentWrapper>
+              <Course>2nd at National Firefighter Robot</Course>
+              <University>Guarda</University>
+            </ContentWrapper>
+          </Education>
+        </EducationWrapper>
+      </EducationContainer>
 
       <SkillWrapper>
         <h3>Skills</h3>

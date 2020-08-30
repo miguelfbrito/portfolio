@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Grid = styled.section`
   display: grid;
-  grid-template-columns: 1.4fr 1.4fr 1.8fr;
+  grid-template-columns: 1fr 1fr 0.5fr;
   grid-gap: 2rem;
   grid-template-areas:
     "intro intro image"
@@ -30,15 +30,20 @@ export const ImageWrapper = styled.div`
   align-items: center;
   justify-content: flex-end;
 
+  opacity: 0;
+  animation: fadeInPlace 1s;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+
   @media only screen and (max-width: 1280px) {
     display: none;
   }
 `
 
 export const Image = styled.img`
-  width: 30vw;
+  width: 100%;
   display: flex;
-  margin-top: 50px;
+  margin-top: 10vh;
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
 `
 

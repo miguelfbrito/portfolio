@@ -14,15 +14,14 @@ export const Wrapper = styled.div`
   h2 {
     font-weight: 600;
     font-size: 2.5em;
-    letter-spacing: -0.05em;
     color: ${props => props.theme.primary};
     /* color: ${color.primary}; */
+    margin-bottom: 25px;
   }
 
   h3 {
     font-weight: 600;
     font-size: 19px;
-    margin: 5px 0 10px 0;
   }
 
   h4 {

@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   padding-top: 15px;
 
-  animation: fadeIn 1s;
+  animation: fadeInPlace 0.75s;
 
   @media screen and (max-width: 700px) {
     padding-top: 0;
