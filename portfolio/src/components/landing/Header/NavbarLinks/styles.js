@@ -41,9 +41,6 @@ export const Hamburguer = styled.div`
   .line {
     fill: none;
     stroke: #71818d;
-    stroke-width: 6px;
-    stroke-linecap: round;
-    stroke-linejoin: round;
   }
 
   /* Hamburger */

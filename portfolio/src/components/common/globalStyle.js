@@ -7,6 +7,11 @@ const GlobalStyle = createGlobalStyle`
         padding: 0px;
     }
 
+
+    body {
+        overflow-x: hidden;
+    }
+
     h1, h2, h3, h4, a, p, li {
         font-family: Maven Pro;
         font-style: normal;

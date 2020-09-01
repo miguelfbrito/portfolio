@@ -48,7 +48,7 @@ const MyProjects = [
   },
 ]
 
-export const Projects = () => {
+export const Projects = ({ setSectionHeight }) => {
   const wrapperRef = useRef(null)
   const [projectWrapperHeight, setProjectWrapperHeight] = useState(0)
 
@@ -59,6 +59,8 @@ export const Projects = () => {
     if (wrapperRef.current) {
       console.log("hi: " + wrapperRef.current.offsetHeight)
       setProjectWrapperHeight(wrapperRef.current.offsetHeight)
+      setSectionHeight(wrapperRef.current.offsetHeight)
+      console.log("bananan")
     }
   }
 
@@ -68,13 +70,14 @@ export const Projects = () => {
 
   return (
     <Wrapper>
-      <img
+      {/* <img
         src={projectBackground}
         style={{
           minHeight: `${projectWrapperHeight + 300}px`,
+          height: "100%",
           marginBottom: "300px",
         }}
-      />
+      /> */}
       <h2>Projects</h2>
       <h3>Things I've built and helped building over the years.</h3>
       <ProjectWrapper ref={wrapperRef}>

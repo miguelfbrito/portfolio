@@ -6,6 +6,33 @@ import projectBackground from "../../../assets/images/projects_background.svg"
 
 export const Wrapper = styled.div`
   margin-top: 10vh;
+  background-color: ${color.primary};
+  left: 0;
+  margin-left: -17.5vw;
+  padding-left: 17.5vw;
+  margin-right: -17.5vw;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+
+  padding-bottom: 50px;
+
+  @media only screen and (max-width: 1000px) {
+    margin-left: -5vw;
+    padding-left: 5vw;
+    margin-right: -5vw;
+  }
+/* 
+  &:before {
+    content: "";
+    background-color: ${color.primary};
+    position: absolute;
+    height: 50px;
+    width: 100vw;
+    left: 0;
+    z-index: -1;
+    max-width: 100%;
+  } */
 
   img {
     position: absolute;
@@ -36,9 +63,14 @@ export const ProjectWrapper = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 2.5rem;
   margin-top: 5vh;
+  max-width: calc(100% - 17.5vw);
 
-  @media screen and (max-width: 700) {
-    grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  @media screen and (max-width: 1000px) {
+    max-width: calc(100% - 5vw);
+  }
+
+  @media screen and (max-width: 700px) {
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
   }
 `
 
