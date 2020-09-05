@@ -5,12 +5,13 @@ import { color } from "../../../components/common/constants"
 import projectBackground from "../../../assets/images/projects_background.svg"
 
 export const Wrapper = styled.div`
-  margin-top: 10vh;
   background-color: ${color.primary};
   left: 0;
-  margin-left: -17.5vw;
-  padding-left: 17.5vw;
-  margin-right: -17.5vw;
+  width: 100vw;
+  margin-left: -15vw;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  margin-right: -15vw;
   overflow-y: hidden;
   overflow-x: hidden;
 
@@ -20,6 +21,7 @@ export const Wrapper = styled.div`
   @media only screen and (max-width: 1000px) {
     margin-left: -5vw;
     padding-left: 5vw;
+    padding-right: 5vw;
     margin-right: -5vw;
   }
 /* 
@@ -63,11 +65,6 @@ export const ProjectWrapper = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 2.5rem;
   margin-top: 5vh;
-  max-width: calc(100% - 17.5vw);
-
-  @media screen and (max-width: 1000px) {
-    max-width: calc(100% - 5vw);
-  }
 
   @media screen and (max-width: 700px) {
     grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
