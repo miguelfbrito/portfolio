@@ -1,10 +1,17 @@
 import styled from "styled-components"
+import { color } from "../../../common/constants"
 
 const timing = "0.35s"
 
 export const Menu = styled.ul`
   .hamburguer {
     margin-right: -12px;
+  }
+
+  .active {
+    a {
+      color: ${color.secondary};
+    }
   }
 
   @media only screen and (max-width: 700px) {

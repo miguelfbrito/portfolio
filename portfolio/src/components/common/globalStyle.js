@@ -10,6 +10,9 @@ const GlobalStyle = createGlobalStyle`
 
     body {
         overflow-x: hidden;
+        /* background-color: ${color.background} */
+        /* background-color: ${color.secondary}; */
+        background-color: #fff9f0;
     }
 
     h1, h2, h3, h4, a, p, li {
@@ -26,13 +29,10 @@ const GlobalStyle = createGlobalStyle`
         letter-spacing: 0.04em;
     }
 
-    body {
-        background-color: ${color.background}
-    }
-
     h1, a {
         font-weight: 400;
     }
+
 
     @media screen and (max-width: 700px){
         html {

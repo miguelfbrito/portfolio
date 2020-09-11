@@ -1,20 +1,19 @@
 import React, { Fragment, useState } from "react"
 import { ThemeProvider } from "styled-components"
 import { Navbar } from "../components/landing/Header/Navbar"
-import { Container } from "../components/common/Container"
+import { Container } from "../components/common/Container/styles"
 import GlobalStyle from "../components/common/globalStyle"
-import { Intro } from "../components/landing/Intro"
-import { Description } from "../components/landing/Description"
-import developer from "../assets/images/undraw_code_thinking.svg"
-import programming from "../assets/images/undraw_programming.svg"
-import { Grid, ImageWrapper, Image, Arrow } from "../components/common/styles"
+import { Introduction } from "../components/landing/Introduction"
+import { EducationSkills } from "../components/landing/EducationSkills"
+import { Grid } from "../components/common/styles"
 import Helmet from "react-helmet"
 import { Projects } from "../components/landing/Projects"
 import { Footer } from "../components/landing/Footer"
 import headerImage from "../assets/images/header-vector.svg"
-import arrow from "../assets/images/icon_arrow.svg"
-import AnchorLink from "react-anchor-link-smooth-scroll"
 import { theme } from "../components/common/theme"
+import { Contact } from "../components/landing/Contact"
+
+import { color } from "../components/common/constants"
 
 export default () => {
   const [projectHeight, setProjectHeight] = useState(0)
@@ -35,31 +34,15 @@ export default () => {
           width: "100%",
           left: 0,
         }}
-        class="headerImage"
+        className="headerImage"
         alt="Thinking developer"
       />
       <Container>
-        <section style={{ minHeight: "100vh" }} id="about">
-          <Navbar />
-          <Grid>
-            <Intro />
-            <Description />
-            <ImageWrapper>
-              <Image src={developer} alt="Thinking developer"></Image>
-            </ImageWrapper>
-          </Grid>
-          <AnchorLink href="#projects">
-            <Arrow src={arrow} alt="Arrow down" />
-          </AnchorLink>
-        </section>
-        {/* <section style={{ minHeight: `${projectHeight}px` }} id="projects"> */}
-        <section style={{}} id="projects">
-          <Projects setSectionHeight={height => setProjectHeight(height)} />
-        </section>
-        <section style={{ minHeight: "100vh" }} id="contact">
-          <h3>Contact</h3>
-        </section>
-        <Footer />
+        <Navbar />
+        <Introduction />
+        <EducationSkills />
+        <Projects />
+        <Contact />
       </Container>
     </ThemeProvider>
   )

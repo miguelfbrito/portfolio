@@ -1,5 +1,8 @@
+// original blue: primary: "#575A89",
 export const color = {
-  primary: "#575A89",
+  primary: "#3e4170",
+  primarylight: "#DDDEE7",
+  primarydark: "#26273b",
   secondary: "#f3938c",
   background: "#EAEDF0",
   darkblue: "#403b57",

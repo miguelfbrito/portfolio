@@ -5,36 +5,11 @@ import { color } from "../../../components/common/constants"
 import projectBackground from "../../../assets/images/projects_background.svg"
 
 export const Wrapper = styled.div`
-  background-color: ${color.primary};
-  left: 0;
-  width: 100vw;
-  margin-left: -15vw;
-  padding-left: 15vw;
-  padding-right: 15vw;
-  margin-right: -15vw;
-  overflow-y: hidden;
-  overflow-x: hidden;
-
-
-  padding-bottom: 50px;
+  /* background-color: ${color.primary}; */
 
   @media only screen and (max-width: 1000px) {
-    margin-left: -5vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    margin-right: -5vw;
+    padding: 10vh 0;
   }
-/* 
-  &:before {
-    content: "";
-    background-color: ${color.primary};
-    position: absolute;
-    height: 50px;
-    width: 100vw;
-    left: 0;
-    z-index: -1;
-    max-width: 100%;
-  } */
 
   img {
     position: absolute;
@@ -49,7 +24,6 @@ export const Wrapper = styled.div`
     font-weight: 600;
     font-size: 2.5em;
     color: ${color.white};
-    padding-top: 7vh;
   }
 
   h3 {
@@ -62,12 +36,12 @@ export const Wrapper = styled.div`
 
 export const ProjectWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
   grid-gap: 2.5rem;
   margin-top: 5vh;
 
   @media screen and (max-width: 700px) {
-    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   }
 `
 
@@ -85,6 +59,7 @@ export const Project = styled.div`
   &:hover {
     transform: translateY(-5px);
   }
+
   background-color: #454875;
   img {
     position: relative;
@@ -104,7 +79,8 @@ export const ImageWrapper = styled.div`
 
 export const Content = styled.div`
   position: relative;
-  padding: 35px;
+  padding: 25px 30px;
+  /* padding-bottom: 45px; */
   /* background-color: ${color.primary}; */
   h3,
   p {
@@ -113,14 +89,16 @@ export const Content = styled.div`
   }
 
   h3{
-    font-size: 1.35rem;
-    margin-bottom: 25px;
+    font-size: 1.75rem;
+    margin-bottom: 15px;
     font-weight: 600;
   }
 
   p {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 400;
+    line-height: 1.15rem;
+    margin-bottom: 5px;
   }
 
   svg {
@@ -154,6 +132,8 @@ export const Technologies = styled.ul`
   display: flex;
   /* justify-content: flex-end; */
   flex-wrap: wrap;
+
+  /* position: absolute; */
   li {
     font-size: 0.65rem;
     color: #222;

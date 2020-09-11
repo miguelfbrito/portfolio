@@ -1,8 +1,9 @@
 import styled from "styled-components"
+import { color } from "../constants"
 
 export const Container = styled.div`
   margin: 0 auto;
-  max-width: 65%;
+  max-width: 70%;
 
   @media only screen and (max-width: 1000px) {
     max-width: 90%;

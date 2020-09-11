@@ -39,17 +39,22 @@ export class NavbarLinks extends React.Component {
             </button>
           </Hamburguer>
         </li>
-        <li class="extended">
+        <li className="extended active">
           <Link as={AnchorLink} href="#about">
             About
           </Link>
         </li>
-        <li class="extended">
+        <li className="extended">
+          <Link as={AnchorLink} href="#education">
+            Education
+          </Link>
+        </li>
+        <li className="extended">
           <Link as={AnchorLink} href="#projects">
             Projects
           </Link>
         </li>
-        <li class="extended">
+        <li className="extended">
           <Link as={AnchorLink} href="#contact">
             Contact
           </Link>
