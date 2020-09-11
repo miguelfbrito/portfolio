@@ -1,11 +1,22 @@
 import React from "react"
 
 import { NavbarLinks } from "../NavbarLinks"
-import { Wrapper } from "./styles"
+import { Wrapper, Wave } from "./styles"
+
+import header from "../../../../assets/images/header-vector.svg"
 
 export const Navbar = () => (
-  <Wrapper>
-    <h1>Portfolio</h1>
-    <NavbarLinks />
-  </Wrapper>
+  <div>
+    <Wrapper>
+      <h1>Portfolio</h1>
+      <NavbarLinks />
+    </Wrapper>
+
+    <Wave
+      src={header}
+      style={{}}
+      className="headerImage"
+      alt="Thinking developer"
+    />
+  </div>
 )

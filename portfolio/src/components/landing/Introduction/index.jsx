@@ -8,7 +8,7 @@ import programming from "../../../assets/images/undraw_programming.svg"
 
 export const Introduction = () => {
   return (
-    <Section id="introduction" link="#education">
+    <Section id="introduction" link="#education" minHeight="95vh">
       <Wrapper>
         <InnerWrapper>
           <Content>

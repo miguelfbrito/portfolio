@@ -25,18 +25,6 @@ export default () => {
       </Helmet>
       <GlobalStyle />
 
-      <img
-        src={headerImage}
-        style={{
-          position: "absolute",
-          display: "block",
-          zIndex: "-1",
-          width: "100%",
-          left: 0,
-        }}
-        className="headerImage"
-        alt="Thinking developer"
-      />
       <Container>
         <Navbar />
         <Introduction />

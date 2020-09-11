@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Container = styled.section`
   position: relative;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 
   margin-left: -15vw;
   padding-left: 15vw;
@@ -26,7 +26,7 @@ export const Container = styled.section`
 export const ChildrenWrapper = styled.div`
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  min-height: ${props => props.minHeight || "100vh"};
 `
 
 export const ArrowWrapper = styled.div`
