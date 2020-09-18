@@ -2,6 +2,10 @@ import styled from "styled-components"
 import { color } from "../../../common/constants"
 
 import header_image from "../../../../assets/images/header-vector.svg"
+export const Container = styled.div`
+  position: absolute;
+  min-height: 100vh;
+`
 
 export const Wrapper = styled.div`
   margin-left: -15vw;
@@ -13,13 +17,14 @@ export const Wrapper = styled.div`
   min-height: 5vh;
   display: flex;
   justify-content: space-between;
-  padding-top: 25px;
+  padding-top: 10px;
 
   animation: fadeInPlace 0.75s;
 
   h1,
   ul {
     line-height: 3rem;
+    z-index: 10;
   }
 
   h1 {
@@ -67,9 +72,9 @@ export const Wrapper = styled.div`
 
   @media only screen and (max-width: 1000px) {
     margin-left: -5vw;
+    margin-right: -5vw;
     padding-left: 5vw;
     padding-right: 5vw;
-    margin-right: -5vw;
   }
 `
 export const Wave = styled.img`
@@ -84,6 +89,12 @@ export const Wave = styled.img`
   width: 100vw;
   position: relative;
   pointer-events: none;
+
+  @media only screen and (max-width: 600px) {
+    /* margin-top: -0.5px; In order to fix empty line between header on some resolutions */
+  }
+
+  animation: fadeInPlace 0.75s;
 
   @media only screen and (max-width: 1000px) {
     margin-left: -5vw;

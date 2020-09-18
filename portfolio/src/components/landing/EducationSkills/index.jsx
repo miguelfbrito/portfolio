@@ -3,7 +3,7 @@ import {
   Education,
   University,
   Course,
-  StudiesDuration,
+  ExtraInfo,
   Skills,
   Skill,
   SkillCategory,
@@ -20,9 +20,8 @@ import { Arrow } from "../../common/Arrow"
 
 import { Section } from "../../common/Section"
 import { color } from "../../common/constants"
-import SchoolIcon from "../../../assets/images/icon_school.svg"
-import BookIcon from "../../../assets/images/icon_book.svg"
-import MedalIcon from "../../../assets/images/medal.svg"
+
+import { SchoolIcon, BookIcon, MedalIcon } from "../../common/Icons"
 
 const categorySkills = [
   {
@@ -51,54 +50,61 @@ const categorySkills = [
 ]
 
 export const EducationSkills = () => {
+  const iconOpacity = 0.8
+
   return (
-    <Section id="education" link="#projects" color={color.primarydark}>
+    <Section
+      id="education"
+      link="#projects"
+      color={color.primarydark}
+      arrowColor={color.secondary}
+    >
       <Container>
-        <h2>Education</h2>
+        {/* <h2>Education</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, rem.
-        </p>
+        </p> */}
         <Wrapper>
           <EducationContainer>
             <EducationWrapper>
               <h3>Education</h3>
               <Education>
-                <Icon src={SchoolIcon}></Icon>
+                <SchoolIcon opacity={iconOpacity} />
                 <ContentWrapper>
                   <Course>MSc in Software Engineering</Course>
                   <University>University of Minho</University>
-                  <StudiesDuration>2018-2020</StudiesDuration>
+                  <ExtraInfo>2018-2020</ExtraInfo>
                 </ContentWrapper>
               </Education>
 
               <Education>
-                <Icon src={SchoolIcon}></Icon>
+                <SchoolIcon opacity={iconOpacity} />
                 <ContentWrapper>
                   <Course>BSc in Computer Engineering</Course>
                   <University>Polytechnic of Guarda</University>
-                  <StudiesDuration>2015-2018</StudiesDuration>
+                  <ExtraInfo>2015-2018</ExtraInfo>
                 </ContentWrapper>
               </Education>
 
               <Education>
-                <Icon src={SchoolIcon}></Icon>
+                <SchoolIcon opacity={iconOpacity} />
                 <ContentWrapper>
                   <Course>Linux Essentials</Course>
                   <University>Linux Professional Institute</University>
-                  <StudiesDuration>2015</StudiesDuration>
+                  <ExtraInfo>2015</ExtraInfo>
                 </ContentWrapper>
               </Education>
             </EducationWrapper>
 
             <EducationWrapper>
-              <h3>Publications</h3>
+              <h3>Achievements</h3>
               <Education>
-                <Icon src={BookIcon}></Icon>
+                <BookIcon opacity={iconOpacity} />
                 <ContentWrapper>
                   <Course>
                     Codeflex: A Web-based Platform for Competitive Programming
                   </Course>
-                  <University>
+                  <ExtraInfo>
                     CISTI, 2019 (
                     <a
                       href="https://ieeexplore.ieee.org/document/8760776"
@@ -107,23 +113,23 @@ export const EducationSkills = () => {
                       link
                     </a>
                     )
-                  </University>
+                  </ExtraInfo>
                 </ContentWrapper>
               </Education>
 
               <Education>
-                <Icon src={MedalIcon}></Icon>
+                <MedalIcon opacity={iconOpacity} />
                 <ContentWrapper>
                   <Course>DGES Merit Scolarship student</Course>
-                  <University> 2018</University>
+                  <ExtraInfo> 2018</ExtraInfo>
                 </ContentWrapper>
               </Education>
 
               <Education>
-                <Icon src={MedalIcon}></Icon>
+                <MedalIcon opacity={iconOpacity} />
                 <ContentWrapper>
                   <Course>2nd at National Firefighter Robot</Course>
-                  <University>
+                  <ExtraInfo>
                     Guarda, 2017 (
                     <a
                       href="https://pplware.sapo.pt/eventos/pplware-esta-no-concurso-nacional-robo-bombeiro-2017/"
@@ -132,7 +138,7 @@ export const EducationSkills = () => {
                       link
                     </a>
                     )
-                  </University>
+                  </ExtraInfo>
                 </ContentWrapper>
               </Education>
             </EducationWrapper>

@@ -6,18 +6,10 @@ import projectBackground from "../../../assets/images/projects_background.svg"
 
 export const Wrapper = styled.div`
   /* background-color: ${color.primary}; */
+  width: 100%;
 
   @media only screen and (max-width: 1000px) {
     padding: 10vh 0;
-  }
-
-  img {
-    position: absolute;
-    left: 0;
-    width: 100vw;
-    max-width: 100%;
-    z-index: -1;
-    height: 100vh;
   }
 
   h2 {
@@ -27,16 +19,25 @@ export const Wrapper = styled.div`
   }
 
   h3 {
-    color: #ccc;
+    color: ${color.white};
+    opacity: 0.75;
     font-weight: 400;
-    font-size: 0.9rem;
-    margin-top: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  h4   {
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: ${color.white};
+    line-height: 2rem;
+    margin-bottom: 10px;
   }
 `
 
 export const ProjectWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
   grid-gap: 2.5rem;
   margin-top: 5vh;
 
@@ -85,7 +86,6 @@ export const Content = styled.div`
   h3,
   p {
     color: ${color.white};
-    line-height: 1.1rem;
   }
 
   h3{
@@ -95,24 +95,30 @@ export const Content = styled.div`
   }
 
   p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 400;
-    line-height: 1.15rem;
+    line-height: 1.35rem;
     margin-bottom: 5px;
+    opacity:  0.8;
   }
 
   svg {
     position: absolute;
-    right: 45px;
-    top: 35px;
-    stroke: ${color.secondary};
+    right: 20px;
+    top: 25px;
+    width: 25px;
+    transition: all 200ms ease-in-out;
+    path {
+      fill: ${color.secondary};
+    }
   }
 
 
   svg:hover {
     cursor: pointer;
-    stroke: #fcb4ae;
-    transition: stroke 300ms ease-in-out;
+    /* stroke: #fcb4ae; */
+    filter: brightness(150%);
+    transform: scale(0.85);
   }
 
 
@@ -135,11 +141,11 @@ export const Technologies = styled.ul`
 
   /* position: absolute; */
   li {
-    font-size: 0.65rem;
+    font-size: 0.8rem;
     color: #222;
     font-weight: 500;
     background-color: ${color.secondary};
-    padding: 3px 10px;
+    padding: 5px 10px;
     border-radius: 15px;
     list-style: none;
 

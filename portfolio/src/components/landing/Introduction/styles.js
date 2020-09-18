@@ -7,6 +7,10 @@ export const Wrapper = styled.div`
   opacity: 0;
   animation-delay: 0.2s;
   animation-fill-mode: forwards;
+
+  @media screen and (max-height: 700px){
+    padding-top: 100px;
+  }
  
 
   h2 {
@@ -16,10 +20,10 @@ export const Wrapper = styled.div`
   }
 
   h3 {
-    font-size: 2.5em;
+    font-size: 2.8em;
     font-weight: 600;
     /* color: ${color.primary}; */
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     letter-spacing: -0.03em;
 
     span {
@@ -29,9 +33,10 @@ export const Wrapper = styled.div`
   }
 
   h4 {
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-weight: 200;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+
 
     b {
       font-weight: 600;
@@ -48,17 +53,18 @@ export const InnerWrapper = styled.div`
   align-items: center;
 `
 export const Content = styled.div`
-  flex-basis: 90%;
-  @media only screen and (max-width: 1280px) {
-    flex-basis: 100%;
+  margin-right: 75px;
+
+  @media only screen and (max-width: 1000px) {
+    margin-right: 0;
   }
 `
 
 export const ImageWrapper = styled.div`
   display: flex;
   align-items: center;
-  margin-left: 50px;
   justify-content: flex-end;
+  position: relative;
   opacity: 0;
 
   animation: fadeInPlace 1s;
@@ -68,29 +74,31 @@ export const ImageWrapper = styled.div`
   /* background-color: rgba(87, 90, 137, 0.7); */
 
   /* box-shadow: 0px 5px 10px rgba(243, 147, 128, 0.5); */
-  width: auto;
+  /* width: auto; */
 
   @media only screen and (max-width: 1000px) {
     display: none;
   }
+
+  svg {
+    position: absolute;
+    width: 100%;
+    max-width: 30vw;
+    left: 10px;
+    transform: scale(1.2);
+
+    opacity: 1;
+
+    filter: drop-shadow(0px 3px 6px ${color.secondary});
+    /* filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3)); */
+
+    path {
+      fill: ${color.secondary};
+    }
+  }
 `
 
 export const Image = styled.img`
-  /* display: flex; */
-
-  width: 25rem;
-  height: 25rem;
-  padding: 25px;
-
-  background: ${color.secondary};
-  border-radius: 50%;
-
-  @media only screen and (max-width: 1280px) {
-    width: 20rem;
-    height: 20rem;
-  }
-  @media only screen and (max-width: 1100px) {
-    width: 17rem;
-    height: 17rem;
-  }
+  width: 100%;
+  z-index: 2;
 `

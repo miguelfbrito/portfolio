@@ -8,7 +8,7 @@ import programming from "../../../assets/images/undraw_programming.svg"
 
 export const Introduction = () => {
   return (
-    <Section id="introduction" link="#education" minHeight="95vh">
+    <Section id="introduction" link="#education">
       <Wrapper>
         <InnerWrapper>
           <Content>
@@ -27,6 +27,19 @@ export const Introduction = () => {
           </Content>
 
           <ImageWrapper>
+            <svg
+              width="365px"
+              height="372px"
+              viewBox="0 0 365 372"
+              version="1.1"
+            >
+              <path
+                d="M178.746 371C281.059 371 364 288.173 364 186S328.634 1 178.746 1C28.857 1 65.06 129 24.004 186c-76.087 105.633 52.429 185 154.742 185z"
+                stroke=""
+                fill="#feefefe"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
             <Image src={developer} alt="Thinking developer"></Image>
           </ImageWrapper>
         </InnerWrapper>

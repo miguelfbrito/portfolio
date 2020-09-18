@@ -2,14 +2,21 @@ import styled from "styled-components"
 import { color } from "../../common/constants"
 
 export const Container = styled.div`
+  width: 100%;
+
   h2,
   h3,
+  a,
   p {
-    color: ${color.white};
+    color: ${color.whitesecondary};
   }
 
   h2 {
     color: ${color.primary};
+  }
+  h3 {
+    color: ${color.secondary};
+    opacity: 0.9;
   }
 
   & > p {
@@ -32,18 +39,24 @@ export const Wrapper = styled.div`
     color: #ddd;
   } */
 
-  img {
-    filter: fill(${color.white});
-  }
-
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
   }
 
   p {
     font-size: 1rem;
-    font-weight: 400;
+    line-height: 1.2rem;
+    font-weight: 500;
+  }
+
+  svg {
+    transform: scale(1.15);
+  }
+  svg path {
+    fill: ${color.secondary};
   }
 
   @media only screen and (max-width: 1280px) {
@@ -77,11 +90,6 @@ export const Education = styled.div`
   display: flex;
 `
 
-export const Icon = styled.img`
-  min-width: 1.5rem;
-  max-width: 1.5rem;
-`
-
 export const University = styled.p``
 
 export const ContentWrapper = styled.div`
@@ -92,8 +100,6 @@ export const ContentWrapper = styled.div`
 `
 
 export const Course = styled.p``
-
-export const StudiesDuration = styled.p``
 
 export const SkillWrapper = styled.div`
   animation: fadeIn 1s;
@@ -110,10 +116,10 @@ export const Skills = styled.div`
 
 export const Skill = styled.div`
   background-color: #ddd;
-  padding: 8px 15px;
+  padding: 6px 15px;
   border-radius: 20px;
 
-  margin-top: 7px;
+  margin-top: 10px;
   margin-right: 10px;
 
   p {
@@ -125,12 +131,35 @@ export const Skill = styled.div`
 `
 export const SkillCategory = styled.div`
   &:not(:nth-child(2)) {
-    margin-top: 20px;
+    margin-top: 35px;
   }
 
   h4 {
     font-size: 0.8rem;
-    font-weight: 500;
-    margin-top: 0.5rem;
+    font-weight: 600;
+    margin-top: 0.8rem;
+    color: ${color.white};
+    opacity: 0.9;
+
+    text-transform: uppercase;
   }
+
+  h4:before {
+    content: "";
+    display: inline-block;
+    margin-right: 5px;
+    color: red;
+    width: 2px;
+    height: 0.65rem;
+    background-color: ${color.secondary};
+    border-radius: 20%;
+    vertical-align: middle;
+    margin-bottom: 1px;
+  }
+`
+
+export const ExtraInfo = styled.p`
+  margin-top: 3px;
+  /* font-size: 0.95rem !important; */
+  opacity: 0.5;
 `

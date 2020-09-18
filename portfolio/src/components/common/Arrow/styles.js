@@ -8,6 +8,9 @@ export const Wrapper = styled.div`
   justify-self: center;
   /* padding-top: 50px; */
 
+  animation-delay: 1s;
+  animation: fadeInPlace 0.75s;
+
   path {
     fill: ${props => props.arrowColor || color.primary};
   }
