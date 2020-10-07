@@ -12,7 +12,7 @@ export const NavbarLinks = () => {
       <li class="hamburguer">
         <Hamburguer>
           <button
-            onClick={() => setActiveHamburger(!activeHamburguer)}
+            onClick={() => setActiveHamburger(false)}
             class={activeHamburguer ? "on" : ""}
           >
             <svg viewBox="0 0 120 120">

@@ -37,11 +37,12 @@ export const Hamburguer = styled.div`
   }
 
   button:hover .line {
-    stroke: #6662c4;
+    /* stroke: #6662c4; */
   }
 
   svg {
     display: block;
+    visibility: hidden;
     width: 50px;
     height: 50px;
   }

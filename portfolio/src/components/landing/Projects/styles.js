@@ -8,9 +8,9 @@ export const Wrapper = styled.div`
   /* background-color: ${color.primary}; */
   width: 100%;
 
-  @media only screen and (max-width: 1000px) {
+  /* @media only screen and (max-width: 1000px) { */
     padding: 10vh 0;
-  }
+  /* } */
 
   h2 {
     font-weight: 600;

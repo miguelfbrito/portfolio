@@ -17,9 +17,8 @@ export const Container = styled.section`
     padding-left: 5vw;
     padding-right: 5vw;
     margin-right: -5vw;
-  }
-
-  & > div:first-of-type {
+    padding-bottom: 10px;
+    padding-top: 10px;
   }
 `
 
