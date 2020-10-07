@@ -45,7 +45,7 @@ const MyProjects = [
     description:
       "An interface built upon graph structures to help a company close the gap in business analytics with their clients through an interactive flow of processes.",
     technologies: ["Vue", "KonvaJS"],
-    github: "https://github.com/miguelfbrito/codeflex",
+    github: "",
   },
 ]
 
@@ -66,9 +66,11 @@ export const Projects = ({ setSectionHeight }) => {
               <Content>
                 <h4>{project.name}</h4>
 
-                <a href={project.github}>
-                  <GithubIcon />
-                </a>
+                {project.github && (
+                  <a href={project.github}>
+                    <GithubIcon />
+                  </a>
+                )}
 
                 <p>{project.description}</p>
 

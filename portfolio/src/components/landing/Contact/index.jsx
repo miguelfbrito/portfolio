@@ -14,7 +14,7 @@ export const Contact = () => {
           <Icons>
             <Icon>
               <a
-                href="mailto:miguelfbrito11@gmail.com"
+                href="mailto:miguel@miguelfbrito.com"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
               >
@@ -23,7 +23,7 @@ export const Contact = () => {
             </Icon>
             <Icon>
               <a href="https://github.com/miguelfbrito" target="_blank">
-                <GithubIcon />
+                <GithubIcon style={{ transform: "scale(1.53)" }} />
               </a>
             </Icon>
           </Icons>

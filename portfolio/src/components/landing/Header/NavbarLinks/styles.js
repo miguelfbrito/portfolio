@@ -5,6 +5,7 @@ const timing = "0.35s"
 
 export const Menu = styled.ul`
   .hamburguer {
+    color: ${color.white};
     margin-right: -12px;
   }
 
@@ -16,7 +17,7 @@ export const Menu = styled.ul`
 
   @media only screen and (max-width: 700px) {
     .extended {
-      display: none;
+      display: ${props => (props.activeHamburguer ? "block" : "none")};
     }
   }
   @media only screen and (min-width: 700px) {

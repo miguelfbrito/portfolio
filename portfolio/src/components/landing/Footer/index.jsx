@@ -17,7 +17,7 @@ export const Footer = () => {
             <a href="https://github.com/miguelfbrito" target="_blank">
               GitHub
             </a>
-            <a href="https://miguelfbrito.com" target="_blank">
+            <a href="https://www.linkedin.com/in/miguelfbrito/" target="_blank">
               LinkedIn
             </a>
           </Links>
