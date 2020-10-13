@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import {
   Education,
   University,
@@ -14,14 +14,14 @@ import {
   EducationWrapper,
   Container,
   Wrapper,
-} from "./styles"
+} from "./styles";
 
-import { Arrow } from "../../common/Arrow"
+import { Arrow } from "../../common/Arrow";
 
-import { Section } from "../../common/Section"
-import { color } from "../../common/constants"
+import { Section } from "../../common/Section";
+import { color } from "../../common/constants";
 
-import { SchoolIcon, BookIcon, MedalIcon } from "../../common/Icons"
+import { SchoolIcon, BookIcon, MedalIcon } from "../../common/Icons";
 
 const categorySkills = [
   {
@@ -32,25 +32,26 @@ const categorySkills = [
       "Hibernate",
       "NodeJS",
       "Express",
-      "SQL Databases",
+      "SQL",
+      "MySQL",
     ],
   },
   {
     category: "Frontend",
-    skills: ["React", "Gatsby", "Vue", "Bootstrap", "HTML5", "CSS3"],
+    skills: ["React", "Gatsby", "Bootstrap", "HTML5", "CSS3"],
   },
   {
     category: "Scripting & Data Science",
     skills: ["Python", "Pandas", "OpenCV"],
   },
   {
-    category: "Others",
-    skills: ["Git", "Trello", "Figma"],
+    category: "Misc",
+    skills: ["Docker", "Git", "GitHub Actions", "AWS EC2", "Figma"],
   },
-]
+];
 
 export const EducationSkills = () => {
-  const iconOpacity = 0.8
+  const iconOpacity = 0.8;
 
   return (
     <Section
@@ -146,11 +147,11 @@ export const EducationSkills = () => {
 
           <SkillWrapper>
             <h3>Skills</h3>
-            {categorySkills.map(element => (
+            {categorySkills.map((element) => (
               <SkillCategory>
                 <h4>{element.category}</h4>
                 <Skills>
-                  {element.skills.map(skill => (
+                  {element.skills.map((skill) => (
                     <Skill>
                       <p>{skill}</p>
                     </Skill>
@@ -162,5 +163,5 @@ export const EducationSkills = () => {
         </Wrapper>
       </Container>
     </Section>
-  )
-}
+  );
+};

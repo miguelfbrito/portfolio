@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import {
   Wrapper,
   ProjectWrapper,
@@ -6,17 +6,17 @@ import {
   Project,
   Content,
   Technologies,
-} from "./styles"
+} from "./styles";
 
-import { color } from "../../common/constants"
+import { color } from "../../common/constants";
 
-import { Section } from "../../common/Section"
-import codeflex from "../../../assets/images/projects/codeflex.png"
-import test from "../../../assets/images/undraw_code_thinking.svg"
-import projectBackground from "../../../assets/images/projects_background.svg"
-import { createRef } from "react"
+import { Section } from "../../common/Section";
+import codeflex from "../../../assets/images/projects/codeflex.png";
+import test from "../../../assets/images/undraw_code_thinking.svg";
+import projectBackground from "../../../assets/images/projects_background.svg";
+import { createRef } from "react";
 
-import { GithubIcon } from "../../common/Icons"
+import { GithubIcon } from "../../common/Icons";
 
 const MyProjects = [
   {
@@ -31,7 +31,7 @@ const MyProjects = [
     description:
       "A sports betting web application supporting multiple sports and bet types. Designed to be highly scalable based on a microservices architecture. ",
     technologies: ["Node", "Express", "MySQL", "React"],
-    github: "https://github.com/miguelfbrito/codeflex",
+    github: "https://github.com/miguelfbrito/Sports-Betting",
   },
   {
     name: "Codeflex",
@@ -47,7 +47,7 @@ const MyProjects = [
     technologies: ["Vue", "KonvaJS"],
     github: "",
   },
-]
+];
 
 export const Projects = ({ setSectionHeight }) => {
   return (
@@ -61,7 +61,7 @@ export const Projects = ({ setSectionHeight }) => {
         <h2>Projects</h2>
         <h3>Things I've built and helped building over the years.</h3>
         <ProjectWrapper>
-          {MyProjects.map(project => (
+          {MyProjects.map((project) => (
             <Project>
               <Content>
                 <h4>{project.name}</h4>
@@ -75,7 +75,7 @@ export const Projects = ({ setSectionHeight }) => {
                 <p>{project.description}</p>
 
                 <Technologies>
-                  {project.technologies.map(tech => (
+                  {project.technologies.map((tech) => (
                     <li>{tech}</li>
                   ))}
                 </Technologies>
@@ -85,5 +85,5 @@ export const Projects = ({ setSectionHeight }) => {
         </ProjectWrapper>
       </Wrapper>
     </Section>
-  )
-}
+  );
+};
